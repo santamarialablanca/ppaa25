@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripción · Jornada de Puertas Abiertas · Colegio Santa María la Blanca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reserva tu plaza para la Jornada de Puertas Abiertas del Colegio Santa María la Blanca. Formulario de inscripción.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="page-transition">
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="colegio.png" alt="Colegio Santa María la Blanca" class="logo-img">
+        
+      </a>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="colegio.html" class="nav-link">El Colegio</a>
+        <a href="aulas-vivas.html" class="nav-link">Aulas Vivas</a>
+        <a href="stands.html" class="nav-link">Stands</a>
+        <a href="extraescolares.html" class="nav-link">Extraescolares</a>
+        <a href="sports-club.html" class="nav-link">Sports Club</a>
+        <a href="inartes.html" class="nav-link">InArtEs</a>
+        <a href="inscripcion.html" class="nav-link active">Inscripción</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="inscripcion.html" class="nav-cta">Inscríbete</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero parallax-section">
+    <div class="page-hero-background">
+      <div class="page-hero-gradient"></div>
+    </div>
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="page-hero-badge">Inscripción</div>
+        <h1 class="page-hero-title">Reserva tu plaza</h1>
+        <p class="page-hero-description">
+          Cuéntanos en qué etapa estás interesado/a y te enviaremos la confirmación con la ruta
+          y el horario asignados. Los datos que facilites se utilizarán únicamente para gestionar tu asistencia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="section section-form parallax-section" id="inscripcion">
+    <div class="container">
+      <form class="form-container" id="inscripcionForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nombre">Nombre y apellidos del adulto *</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="tel" id="telefono" name="telefono">
+          </div>
+          <div class="form-group">
+            <label for="hijo">Nombre del hijo/a potencial alumno/a</label>
+            <input type="text" id="hijo" name="hijo">
+          </div>
+          <div class="form-group">
+            <label for="curso">Curso previsto de incorporación</label>
+            <input type="text" id="curso" name="curso" placeholder="Ej. 3 años, 1.º Primaria, 2.º ESO...">
+          </div>
+          <div class="form-group">
+            <label for="etapa">Etapa de interés principal *</label>
+            <select id="etapa" name="etapa" required>
+              <option value="">Selecciona una opción</option>
+              <option>Escuelita (0–3 años)</option>
+              <option>Infantil</option>
+              <option>Primaria</option>
+              <option>ESO</option>
+              <option>Bachillerato</option>
+              <option>Formación Profesional</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <label>Áreas de interés adicionales (opcional)</label>
+          <p class="form-hint">Marca las que quieras conocer con más detalle.</p>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="interes" value="bilinguismo">
+              <span>Bilingüismo</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="interes" value="orientacion">
+              <span>Orientación / Inclusión</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="interes" value="pastoral">
+              <span>Pastoral</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="interes" value="fp">
+              <span>FP</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="interes" value="inartes">
+              <span>InArtEs</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-group">
+            <label for="turno">Preferencia de horario</label>
+            <select id="turno" name="turno">
+              <option value="">Sin preferencia</option>
+              <option>Mañana</option>
+              <option>Tarde</option>
+            </select>
+            <p class="form-hint">La asignación final de horario se confirmará por correo electrónico.</p>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-group">
+            <label for="comentarios">Comentarios o necesidades específicas</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Ej. Necesidades de accesibilidad, hermanos, etc."></textarea>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <label class="checkbox-label checkbox-label-large">
+            <input type="checkbox" id="rgpd" name="rgpd" required>
+            <span>
+              He leído y acepto la política de privacidad del centro y autorizo el uso de mis datos
+              para la gestión de esta Jornada de Puertas Abiertas. *
+            </span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-large">
+            <span>Enviar inscripción</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="form-note">Recibirás un correo de confirmación con tu ruta y horario asignados.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section class="section section-alt parallax-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Después de inscribirte</div>
+        <h2 class="section-title">¿Qué ocurre después?</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card card-animated">
+          <div class="step-number">1</div>
+          <h3>Confirmación</h3>
+          <p>Recibirás un correo de confirmación con todos los detalles de tu inscripción.</p>
+        </div>
+
+        <div class="step-card card-animated">
+          <div class="step-number">2</div>
+          <h3>Asignación de ruta</h3>
+          <p>Te asignaremos una ruta personalizada según la etapa de interés que hayas indicado.</p>
+        </div>
+
+        <div class="step-card card-animated">
+          <div class="step-number">3</div>
+          <h3>Información práctica</h3>
+          <p>Recibirás indicaciones sobre horario, punto de encuentro, parking y acceso.</p>
+        </div>
+
+        <div class="step-card card-animated">
+          <div class="step-number">4</div>
+          <h3>¡Bienvenido!</h3>
+          <p>El día de la jornada, nuestro equipo te recibirá y te guiará durante toda la experiencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Colegio Santa María la Blanca</h3>
+          <div class="footer-info">
+            <p><i class="fas fa-map-marker-alt"></i> C/ Monasterio de Oseira, 17B<br>28049 Madrid (Montecarmelo)</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+34917508692">(+34) 917 508 692</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:secretaria@c.csmb.es">secretaria@c.csmb.es</a></p>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Servicios y Programas</h3>
+          <ul class="footer-list">
+            <li><a href="extraescolares.html">Extraescolares</a></li>
+            <li><a href="sports-club.html">La Blanca Sports Club</a></li>
+            <li><a href="inartes.html">InArtEs</a></li>
+            <li><a href="https://proyectoebi.com" target="_blank" rel="noopener">Sistema EBI</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Información</h3>
+          <p class="footer-note">
+            Información orientativa. Fechas y horarios definitivos se comunicarán a las familias inscritas.
+          </p>
+          <p class="footer-link">
+            <a href="https://proyectoebi.com" target="_blank" rel="noopener"><i class="fas fa-book"></i> Conoce el Sistema EBI</a>
+          </p>
+          <p class="footer-link" style="margin-top: 0.75rem;">
+            <a href="https://colegiosantamarialablanca.es" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Web oficial</a>
+          </p>
+          <p class="footer-copyright">
+            © 2025 Colegio Santa María la Blanca
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
