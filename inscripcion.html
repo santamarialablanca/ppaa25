@@ -27,13 +27,8 @@
       </button>
       <div class="nav-menu" id="navMenu">
         <a href="index.html" class="nav-link">Inicio</a>
-        <a href="colegio.html" class="nav-link">El Colegio</a>
         <a href="aulas-vivas.html" class="nav-link">Aulas Vivas</a>
         <a href="stands.html" class="nav-link">Stands</a>
-        <a href="extraescolares.html" class="nav-link">Extraescolares</a>
-        <a href="sports-club.html" class="nav-link">Sports Club</a>
-        <a href="inartes.html" class="nav-link">InArtEs</a>
-        <a href="inscripcion.html" class="nav-link active">Inscripción</a>
         <a href="contacto.html" class="nav-link">Contacto</a>
         <a href="faq.html" class="nav-link">FAQ</a>
         <a href="inscripcion.html" class="nav-cta">Inscríbete</a>
@@ -58,111 +53,28 @@
     </div>
   </section>
 
-  <!-- FORMULARIO -->
+  <!-- CTA EXTERNA -->
   <section class="section section-form parallax-section" id="inscripcion">
     <div class="container">
-      <form class="form-container" id="inscripcionForm">
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="nombre">Nombre y apellidos del adulto *</label>
-            <input type="text" id="nombre" name="nombre" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Correo electrónico *</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="telefono">Teléfono de contacto</label>
-            <input type="tel" id="telefono" name="telefono">
-          </div>
-          <div class="form-group">
-            <label for="hijo">Nombre del hijo/a potencial alumno/a</label>
-            <input type="text" id="hijo" name="hijo">
-          </div>
-          <div class="form-group">
-            <label for="curso">Curso previsto de incorporación</label>
-            <input type="text" id="curso" name="curso" placeholder="Ej. 3 años, 1.º Primaria, 2.º ESO...">
-          </div>
-          <div class="form-group">
-            <label for="etapa">Etapa de interés principal *</label>
-            <select id="etapa" name="etapa" required>
-              <option value="">Selecciona una opción</option>
-              <option>Escuelita (0–3 años)</option>
-              <option>Infantil</option>
-              <option>Primaria</option>
-              <option>ESO</option>
-              <option>Bachillerato</option>
-              <option>Formación Profesional</option>
-            </select>
+      <div class="form-container" style="text-align: center;">
+        <div class="form-section" style="margin-bottom: 24px;">
+          <p class="form-hint" style="max-width: 680px; margin: 0 auto 24px;">
+            La inscripción se realiza en formularios externos. Elige la opción que corresponda
+            y te llevaremos al formulario oficial.
+          </p>
+          <div class="hero-actions" style="justify-content: center;">
+            <a href="https://forms.example.com/aulas-vivas" class="btn btn-primary">
+              <span>Inscripción Aulas Vivas</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://forms.example.com/feria-stands" class="btn btn-secondary">
+              Inscripción Feria de Stands
+            </a>
           </div>
         </div>
-
-        <div class="form-section">
-          <label>Áreas de interés adicionales (opcional)</label>
-          <p class="form-hint">Marca las que quieras conocer con más detalle.</p>
-          <div class="checkbox-group">
-            <label class="checkbox-label">
-              <input type="checkbox" name="interes" value="bilinguismo">
-              <span>Bilingüismo</span>
-            </label>
-            <label class="checkbox-label">
-              <input type="checkbox" name="interes" value="orientacion">
-              <span>Orientación / Inclusión</span>
-            </label>
-            <label class="checkbox-label">
-              <input type="checkbox" name="interes" value="pastoral">
-              <span>Pastoral</span>
-            </label>
-            <label class="checkbox-label">
-              <input type="checkbox" name="interes" value="fp">
-              <span>FP</span>
-            </label>
-            <label class="checkbox-label">
-              <input type="checkbox" name="interes" value="inartes">
-              <span>InArtEs</span>
-            </label>
-          </div>
-        </div>
-
-        <div class="form-section">
-          <div class="form-group">
-            <label for="turno">Preferencia de horario</label>
-            <select id="turno" name="turno">
-              <option value="">Sin preferencia</option>
-              <option>Mañana</option>
-              <option>Tarde</option>
-            </select>
-            <p class="form-hint">La asignación final de horario se confirmará por correo electrónico.</p>
-          </div>
-        </div>
-
-        <div class="form-section">
-          <div class="form-group">
-            <label for="comentarios">Comentarios o necesidades específicas</label>
-            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Ej. Necesidades de accesibilidad, hermanos, etc."></textarea>
-          </div>
-        </div>
-
-        <div class="form-section">
-          <label class="checkbox-label checkbox-label-large">
-            <input type="checkbox" id="rgpd" name="rgpd" required>
-            <span>
-              He leído y acepto la política de privacidad del centro y autorizo el uso de mis datos
-              para la gestión de esta Jornada de Puertas Abiertas. *
-            </span>
-          </label>
-        </div>
-
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary btn-large">
-            <span>Enviar inscripción</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <p class="form-note">Recibirás un correo de confirmación con tu ruta y horario asignados.</p>
-        </div>
-      </form>
+      </div>
     </div>
   </section>
 
@@ -213,16 +125,6 @@
             <p><i class="fas fa-phone"></i> <a href="tel:+34917508692">(+34) 917 508 692</a></p>
             <p><i class="fas fa-envelope"></i> <a href="mailto:secretaria@c.csmb.es">secretaria@c.csmb.es</a></p>
           </div>
-        </div>
-
-        <div class="footer-column">
-          <h3>Servicios y Programas</h3>
-          <ul class="footer-list">
-            <li><a href="extraescolares.html">Extraescolares</a></li>
-            <li><a href="sports-club.html">La Blanca Sports Club</a></li>
-            <li><a href="inartes.html">InArtEs</a></li>
-            <li><a href="https://proyectoebi.com" target="_blank" rel="noopener">Sistema EBI</a></li>
-          </ul>
         </div>
 
         <div class="footer-column">
